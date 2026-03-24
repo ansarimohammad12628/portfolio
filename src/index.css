@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Geist:wght@100..900&family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* HERO SECTION */
+.hero-section{
+  /* height: 90vh; */
+background:#f4f9fc;
+box-shadow:
+inset 0 -3px #0000000d,
+inset 0 0 0 2px #fff,
+inset 0 4px 2px #0000000f,
+inset 0 0 24px 4px #0000000a,
+0 1px 3px #0000001f;
+}
+
+/* intro */
+
+.intro-text{
+color:#7a7a7a;
+font-family:"Poppins",sans-serif;
+}
+
+.text-name {
+  color: #000;
+  font-weight: 500;
+  display: inline-block;
+  word-break: break-word;
+}
+
+/* hero title */
+
+.hero-title{
+font-size:clamp(32px,6vw,60px);
+line-height:1.15;
+font-family:"Geist",sans-serif;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* DEFAULT SMALL NAVBAR */
+
+.nav-container {
+  width: 200px;
+  background: white;
+  border-radius: 40px;
+  padding: 12px 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: width 0.5s ease;
+
+}
+
+.nav-container.expand {
+   width: 590px;
+  max-width: 95%;
+}
+
+/* MENU */
+
+.nav-menu {
+  display: none;
+  gap: 30px;
+  align-items: center;
+}
+
+
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.nav-menu.active {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.sayHi {
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+}
+
+.signature-image {
+  height: 50px;
+  width: 100px;
+}
+
+.signature-image img {
+  height: 100%;
+  width: 100%;
+}
+
+/*  */
+
+/* heading responsive */
+.about-heading {
+  font-size: clamp(28px, 5vw, 48px);
+  line-height: 1.2;
+  
+}
+
+/* text readability */
+.about-text {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* profile card */
+.profile-card {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 20px;
+  transform: rotate(-6deg);
+  transition: 0.3s ease;
+}
+
+
+.main-section {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+
+}
+
+/* icon style */
+
+.skill-icon {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+}
+
+
+
+/* animation */
+
+.floating-card {
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+/* starting positions */
+
+.icon-0 { top: 30%; left: 0%; animation-name: move1; }
+.icon-1 { top: 40%; left: 0%; animation-name: move2; }
+.icon-2 { top: 40%; left: 0%; animation-name: move3; }
+.icon-3 { top: 40%; left: 0%; animation-name: move4; }
+.icon-4 { top: 30%; left: 0%; animation-name: move5; }
+.icon-5 { top: 40%; left: 0%; animation-name: move6; }
+
+/* animations */
+
+@keyframes move1{
+0%{ transform:translate(0,0); }
+25%{ transform:translate(120px,80px); }
+50%{ transform:translate(-80px,150px); }
+75%{ transform:translate(200px,-60px); }
+100%{ transform:translate(-150px,-120px); }
+}
+
+@keyframes move2{
+0%{ transform:translate(0,0); }
+25%{ transform:translate(-150px,100px); }
+50%{ transform:translate(180px,140px); }
+75%{ transform:translate(-100px,-80px); }
+100%{ transform:translate(120px,-150px); }
+}
+
+@keyframes move3{
+0%{ transform:translate(0,0); }
+25%{ transform:translate(100px,-120px); }
+50%{ transform:translate(-200px,100px); }
+75%{ transform:translate(150px,60px); }
+100%{ transform:translate(-80px,-140px); }
+}
+
+@keyframes move4{
+0%{ transform:translate(0,0); }
+25%{ transform:translate(-120px,-100px); }
+50%{ transform:translate(200px,120px); }
+75%{ transform:translate(-150px,80px); }
+100%{ transform:translate(100px,-160px); }
+}
+
+@keyframes move5{
+0%{ transform:translate(0,0); }
+25%{ transform:translate(80px,150px); }
+50%{ transform:translate(-180px,-100px); }
+75%{ transform:translate(120px,90px); }
+100%{ transform:translate(-140px,120px); }
+}
+
+@keyframes move6{
+0%{ transform:translate(0,0); }
+25%{ transform:translate(-100px,120px); }
+50%{ transform:translate(150px,-150px); }
+75%{ transform:translate(-200px,60px); }
+100%{ transform:translate(100px,140px); }
+}
+
+
+.projects-section {
+  background: #f8f9fa;
+}
+
+.project-slide {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 630px;
+}
+
+.project-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.down-part {
+  width: 300px;
+  text-align: center;
+}
+
+.button {
+  width: 100%;
+}
+.gmail{
+  text-decoration: none;
+}
+/* overlay */
+
+/* Responsive  */
+
+.hello-img {
+  width: 60px;
+}
+
+@media (max-width: 426px) {
+
+  .main-section {
+    height: auto;
+    display: flex ;
+    flex-wrap: wrap ;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px;
+  }
+
+   .skill-icon {
+    position: static;
+    flex: 0 0 30%;  /* 👈 MOST IMPORTANT */
+    display: flex;
+    justify-content: center;
+  }
+
+  .floating-card {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 24px;
+  }
+}
+
+/*  */
+
+/* mobile fix */
+@media (max-width: 768px) {
+
+
+    /* NAV CONTAINER NORMAL */
+  .nav-container {
+    height: auto;
+  }
+
+  /* MENU BOX */
+  .nav-menu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 90%;
+    max-width: 350px;
+    height: 400px;
+
+    background: white;
+    border-radius: 30px;
+
+    padding: 40px 20px;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    z-index: 999;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+  .nav-container.expand .signature-image {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    z-index: 1000;
+  }
+  .nav-container.expand .menu-icon {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000;
+  }
+  .profile-card {
+    transform: rotate(0deg); 
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+   .project-slide {
+    height: 200px; 
+  }
+    .down-part {
+    width: 60%;
+    padding: 20px;
+  }
+}
+
+.nav-wrapper::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(5px);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+} 
+
+ .nav-container.expand ~ .nav-wrapper::before {
+  opacity: 1;
+  pointer-events: all;
+}
