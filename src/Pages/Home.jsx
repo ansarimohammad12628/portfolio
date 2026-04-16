@@ -17,7 +17,7 @@ const Home = () => {
               <span className="h5 text-name">
                 I'm{" "}
                 <Typewriter
-                  words={["Mohammad Mustafa Ansari , Frontend Developer"]}
+                  words={["Mohammad Mustafa Ansari , Junior Full Stack Web Developer"]}
                   loop={0}
                   cursor
                   cursorStyle="|"
