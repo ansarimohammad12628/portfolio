@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, Image } from "react-bootstrap";
+import { Container, Row, Col, Card, Image, Button } from "react-bootstrap";
 import profile from "../assets/Image/jpg/my-photo.jpg";
 
 const About = () => {
@@ -40,7 +40,7 @@ const About = () => {
             <p className="about-text">
               My goal is to craft clean, efficient, and user-friendly
               experiences.
-            </p>
+            </p> 
           </Col>
         </Row>{" "}
       </Container>
