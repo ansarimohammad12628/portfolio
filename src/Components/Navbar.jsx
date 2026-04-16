@@ -32,13 +32,13 @@ const Navbar = () => {
           <Link to="projects" smooth duration={500} onClick={handleClose}>
             Projects
           </Link>
-         <a 
-  href="/portfolio/Mohammad_Mustafa_2026.pdf" 
-  target="_blank" 
-  rel="noopener noreferrer"
->
-  Resume
-</a>
+          <a
+            href="/portfolio/Mohammad_Mustafa_2026.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </a>
           <Link
             className="sayHi text-light"
             to="contact"

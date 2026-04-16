@@ -79,6 +79,7 @@
   display: none;
   gap: 30px;
   align-items: center;
+  
 }
 
 
@@ -429,7 +430,7 @@
   /* MENU BOX */
   .nav-menu {
     position: fixed;
-    top: 65%;
+    bottom: 100px; 
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 30px;
